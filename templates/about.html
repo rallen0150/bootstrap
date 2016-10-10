@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="container">
+        <h1>About Me</h1>
+        <a href="{% url 'index_view' %}">Back to Home</a> <br>
+        <a href="{% url 'record_view' %}">To Records</a><br>
+        <a href="{% url 'player_view' %}">Players</a>
+        <br>
+        <br>
+        <br>
+        A little bit about me. I was born and raised in South Carolina. My whole life I have been a fan of USC, the REAL USC.
+        Ever since I can remember I have been wearing the garnet and black. My whole life has been one giant fandom revolving Carolina. I always have
+        felt that I was born into this way of life. That is the one thing that I can say without any regret. Carolina runs in my blood. With that said,
+        I do dislike that color orange and that school in the upstate, sorry Sam Seaver. Win or lose I will always cheer on USC and will say it loud and proud.
+        <br>
+        <br>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Me</button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Contact Me</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Name: Bruce Wayne</p>
+                  <p>Address: 1007 Mountain Drive, Gotham</p>
+                  <p>Phone Number: 555-666-7777</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </body>
+</html>

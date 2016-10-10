@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Records</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Records</h1>
+      <a href="{% url 'index_view' %}">Back to Home</a> <br>
+      <a href="{% url 'about_view' %}">About Me</a> <br>
+      <a href="{% url 'player_view' %}">Players</a>
+      <br>
+      <br>
+      <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Record by Year</div>
+
+          <!-- Table -->
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Win</th>
+                <th>Loss</th>
+                <th>Bowl Game</th>
+                <th>Coach</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              {% for row in information %}
+              <tr>
+                <td>{{ row.year }}</td>
+                <td>{{ row.win }}</td>
+                <td>{{ row.loss }}</td>
+                <td>{{ row.bowl_game }}</td>
+                <td>{{ row.coach }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </body>
+</html>

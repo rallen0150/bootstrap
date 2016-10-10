@@ -16,6 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from app.views import index_view, about_view, record_view, player_view
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', index_view, name="index_view"),
+    url(r'^about/$', about_view, name="about_view"),
+    url(r'^record/$', record_view, name="record_view"),
+    url(r'^player/$', player_view, name="player_view")
 ]
