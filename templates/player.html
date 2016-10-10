@@ -4,18 +4,59 @@
     <meta charset="utf-8">
     <title>Players</title>
 
+    <style media="screen">
+      body {
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ac/b2/75/acb275f59c26e75a620dac950a5125fd.jpg");
+      }
+
+      .font {
+        color: white;
+      }
+
+      a {
+        font-size: 20px;
+      }
+
+      .giphy-embed {
+        position: relative;
+        top: -50px;
+        left: 50px;
+      }
+
+      .header {
+        position: relative;
+        left: 500px;
+        color: white;
+        text-decoration: underline;
+      }
+
+      h4  {
+        position: relative;
+        top: -320px;
+        left: 620px;
+      }
+
+      table {
+        position: relative;
+
+      }
+    </style>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+
+
   </head>
   <body>
     <div class="container">
-      <h1>Roster</h1>
+      <h1 class="header">Roster</h1>
       <a href="{% url 'index_view' %}">Back to Home</a> <br>
-      <a href="{% url 'record_view' %}">Team Records</a><br>
       <a href="{% url 'about_view' %}">About Me</a><br>
+      <a href="{% url 'record_view' %}">Team Records</a><br>
+
       <br>
       <div class="panel panel-default">
           <!-- Default panel contents -->
@@ -42,6 +83,8 @@
             </tbody>
           </table>
         </div>
+        <iframe src="//giphy.com/embed/vqLoZ6qWd5saY?html5=true" width="480" height="400" frameBorder="0"
+          class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/clowney-jadeveon-vqLoZ6qWd5saY"><h4>via GIPHY</h4></a></p>
       </div>
   </body>
 </html>

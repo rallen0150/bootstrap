@@ -4,6 +4,32 @@
     <meta charset="utf-8">
     <title>About Me</title>
 
+    <style media="screen">
+      body {
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ac/b2/75/acb275f59c26e75a620dac950a5125fd.jpg");
+      }
+
+      .font {
+        color: white;
+      }
+
+      a {
+        font-size: 20px;
+      }
+
+      .info {
+        color: black;
+        background-color: white
+      }
+
+      .header {
+        position: relative;
+        left: 500px;
+        color: white;
+        text-decoration: underline;
+      }
+    </style>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,18 +38,17 @@
   </head>
   <body>
       <div class="container">
-        <h1>About Me</h1>
+        <h1 class="header">About Me</h1>
         <a href="{% url 'index_view' %}">Back to Home</a> <br>
         <a href="{% url 'record_view' %}">To Records</a><br>
         <a href="{% url 'player_view' %}">Players</a>
         <br>
         <br>
         <br>
-        A little bit about me. I was born and raised in South Carolina. My whole life I have been a fan of USC, the REAL USC.
+        <h3 class="info">A little bit about me. I was born and raised in South Carolina. My whole life I have been a fan of USC, the REAL USC.
         Ever since I can remember I have been wearing the garnet and black. My whole life has been one giant fandom revolving Carolina. I always have
         felt that I was born into this way of life. That is the one thing that I can say without any regret. Carolina runs in my blood. With that said,
-        I do dislike that color orange and that school in the upstate, sorry Sam Seaver. Win or lose I will always cheer on USC and will say it loud and proud.
-        <br>
+        I do dislike that color orange and that school in the upstate, sorry Sam Seaver. Win or lose I will always cheer on USC and will say it loud and proud.</h3>        <br>
         <br>
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Me</button>
           <!-- Modal -->

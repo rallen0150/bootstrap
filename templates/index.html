@@ -4,15 +4,38 @@
     <meta charset="utf-8">
     <title>USC Gamecocks</title>
 
+    <style media="screen">
+      body {
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ac/b2/75/acb275f59c26e75a620dac950a5125fd.jpg");
+      }
+
+      .font {
+        color: white;
+      }
+
+      a {
+        font-size: 20px;
+      }
+
+      iframe {
+        position: relative;
+        left: 250px;
+      }
+
+    </style>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
       <div class="container">
-        <h1>USC Gamecocks Records by Year</h1>
+        <h1 class="font">USC Gamecocks Records by Year</h1>
         <a href="{% url 'about_view' %}">About Me</a> <br>
         <a href="{% url 'record_view' %}">To Records</a> <br>
-        <a href="{% url 'player_view' %}">Players</a>
+        <a href="{% url 'player_view' %}">Players</a><br>
+        <br>
+        <br>
+        <iframe width="560" height="400" src="https://www.youtube.com/embed/X8sRFpDI15E" frameborder="0" allowfullscreen></iframe>
       </div>
   </body>
 </html>

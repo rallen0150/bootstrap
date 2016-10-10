@@ -4,12 +4,39 @@
     <meta charset="utf-8">
     <title>Records</title>
 
+    <style media="screen">
+      body {
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ac/b2/75/acb275f59c26e75a620dac950a5125fd.jpg");
+      }
+
+      .font {
+        color: white;
+      }
+
+      a {
+        font-size: 20px;
+      }
+
+      .header {
+        position: relative;
+        left: 500px;
+        color: white;
+        text-decoration: underline;
+      }
+
+      img {
+        position: relative;
+        height: 400px;
+        width: 650px;
+      }
+    </style>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
-      <h1>Records</h1>
+      <h1 class="header">Records</h1>
       <a href="{% url 'index_view' %}">Back to Home</a> <br>
       <a href="{% url 'about_view' %}">About Me</a> <br>
       <a href="{% url 'player_view' %}">Players</a>
@@ -44,6 +71,8 @@
             </tbody>
           </table>
         </div>
+        <br>
+        <img src="https://saturdayblitz.com/files/2014/12/steve-spurrier-ncaa-football-independence-bowl-miami-vs-south-carolina.jpg" />
     </div>
   </body>
 </html>
